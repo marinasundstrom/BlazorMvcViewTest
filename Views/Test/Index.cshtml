@@ -1,0 +1,15 @@
+@using Microsoft.AspNetCore.Components.Web
+@namespace BlazorMvcViewTest.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View Template!</p>
+
+<component type="typeof(App)" render-mode="ServerPrerendered" />
+
+<script src="_framework/blazor.server.js"></script>
